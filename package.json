@@ -1,0 +1,19 @@
+{
+  "name": "imageanalysis",
+  "version": "1.0.0",
+  "description": "Lambda Function to analyze image content",
+  "main": "handler.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mcesarpl/imageAnalysis.git"
+  },
+  "author": "Mateus Landim",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mcesarpl/imageAnalysis/issues"
+  },
+  "homepage": "https://github.com/mcesarpl/imageAnalysis#readme"
+}
