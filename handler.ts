@@ -1,6 +1,6 @@
-'use strict';
+import { APIGatewayProxyHandler } from 'aws-lambda';
 
-module.exports.hello = async (event) => {
+export const hello : APIGatewayProxyHandler = async (event) => {
   return {
     statusCode: 200,
     body: JSON.stringify(
