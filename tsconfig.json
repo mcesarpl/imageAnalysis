@@ -1,17 +1,35 @@
 {
   "compilerOptions": {
-    "module": "commonjs",
-    "esModuleInterop": true,
-    "forceConsistentCasingInFileNames": true,
-    "strict": true,
     "preserveConstEnums": true,
     "strictNullChecks": true,
     "sourceMap": true,
     "allowJs": true,
-    "target": "es5",
-    "outDir": ".build",
+    "target": "es2015",
+    "outDir": "dist",
     "moduleResolution": "node",
-    "lib": ["es2015"],
-    "rootDir": "./"
+    "esModuleInterop": true,
+    "module": "commonjs",
+    "lib": [
+      "es6"
+    ],
+    "rootDir": "./",
+    "removeComments": true,
+    "typeRoots": [
+      "./node_modules/@types",
+      "./src/@types"
+    ],
+    "resolveJsonModule": true,
+    "baseUrl": ".",
+    "paths": {
+      "@models/*": [
+        "./src/models/*"
+      ],
+      "@factories/*": [
+        "./src/factories/*"
+      ],
+      "@config/*": [
+        "./src/config/*"
+      ]
+    }
   }
 }
